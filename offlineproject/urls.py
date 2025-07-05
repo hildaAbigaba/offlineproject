@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from Home.views import Homepage
 from Systems.views import Systemspage
+from Done.views import DonePage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',Homepage),
-    path('systems/', Systemspage)
+    path('systems/', Systemspage),
+    path('done/', DonePage)
 ]
